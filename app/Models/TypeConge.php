@@ -3,7 +3,7 @@
 
     use CodeIgniter\Model;
 
-    class Types_conge extends Model {
+    class TypeConge extends Model {
         protected $table = "types_conge";
         protected $primaryKey = "id";
         protected $allowedFields = [

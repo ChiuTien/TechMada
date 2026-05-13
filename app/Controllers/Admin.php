@@ -2,16 +2,16 @@
 
 namespace App\Controllers;
 
-use App\Models\Departement;
-use App\Models\Employe;
+use App\Models\Departements;
+use App\Models\Employes;
 use App\Models\TypeConge;
 
 class Admin extends BaseController
 {
     public function employes()
     {
-        $departementModel = new Departement();
-        $employeModel = new Employe();
+        $departementModel = new Departements();
+        $employeModel = new Employes();
         $typeCongeModel = new TypeConge();
 
         $data = [
@@ -44,7 +44,7 @@ class Admin extends BaseController
 
     public function saveEmploye()
     {
-        $model = new Employe();
+        $model = new Employes();
         $id = (int) $this->request->getPost('id');
 
         $payload = [
@@ -78,14 +78,14 @@ class Admin extends BaseController
 
     public function deleteEmploye(int $id)
     {
-        (new Employe())->delete($id);
+        (new Employes())->delete($id);
 
         return redirect()->to(base_url('admin/employe'))->with('success', 'Employé supprimé.');
     }
 
     public function saveDepartement()
     {
-        $model = new Departement();
+        $model = new Departements();
         $id = (int) $this->request->getPost('id');
 
         $payload = [
@@ -104,7 +104,7 @@ class Admin extends BaseController
 
     public function deleteDepartement(int $id)
     {
-        (new Departement())->delete($id);
+        (new Departements())->delete($id);
 
         return redirect()->to(base_url('admin/employe'))->with('success', 'Département supprimé.');
     }
