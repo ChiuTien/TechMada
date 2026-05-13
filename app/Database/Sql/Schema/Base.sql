@@ -1,0 +1,3 @@
+-- Active: 1773730397385@@127.0.0.1@3306@TechMada
+CREATE DATABASE TechMada;
+USE TechMada;
