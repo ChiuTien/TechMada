@@ -1,49 +1,60 @@
--- Active: 1773730397385@@127.0.0.1@3306@TechMada
-create table departements(
-    id              INT PRIMARY KEY AUTO_INCREMENT,
-    nom             VARCHAR(100),
-    description     VARCHAR(255)
+-- Converted for SQLite
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE departements(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nom TEXT,
+    description TEXT
 );
-create table employes(
-    id              INT PRIMARY KEY AUTO_INCREMENT,
-    nom             VARCHAR(100),
-    prenom          VARCHAR(100),
-    email           VARCHAR(100) UNIQUE,
-    password        VARCHAR(8),
-    role            VARCHAR(100),
-    departement_id  INT,
-    date_embauche   DATE,
-    actif           BOOLEAN,
+
+CREATE TABLE employes(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nom TEXT,
+    prenom TEXT,
+    email TEXT UNIQUE,
+    password TEXT,
+    role TEXT,
+    departement_id INTEGER,
+    date_embauche TEXT,
+    actif INTEGER,
     FOREIGN KEY (departement_id) REFERENCES departements(id)
 );
-create table types_conge(
-    id              INT PRIMARY KEY AUTO_INCREMENT,
-    libelle         VARCHAR(100),
-    jours_annuels   INT,
-    deductible      BOOLEAN
+
+CREATE TABLE types_conge(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    libelle TEXT,
+    jours_annuels INTEGER,
+    deductible INTEGER
 );
-create table soldes(
-    id              INT PRIMARY KEY AUTO_INCREMENT,
-    employe_id      INT,
-    type_conge_id   INT,
-    annee           INT,
-    jours_attribues INT,
-    jours_pris      INT,
+
+CREATE TABLE soldes(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    employe_id INTEGER,
+    type_conge_id INTEGER,
+    annee INTEGER,
+    jours_attribues INTEGER,
+    jours_pris INTEGER,
     FOREIGN KEY (employe_id) REFERENCES employes(id),
-    FOREIGN KEY (type_conge_id) REFERENCES types_conge(id)  
+    FOREIGN KEY (type_conge_id) REFERENCES types_conge(id)
 );
-create table conges(
-    id              INT PRIMARY KEY AUTO_INCREMENT,
-    employe_id      INT,
-    type_conge_id   INT,
-    date_debut      DATE,
-    date_fin        DATE,
-    nb_jours        INT,
-    motif           VARCHAR(255),
-    statut          VARCHAR(100),
-    commentaire_rh  VARCHAR(255),
-    created_at      DATE,
-    traiter_par     VARCHAR(100),
-    Foreign Key (employe_id) REFERENCES employes(id),
-    Foreign Key (type_conge_id) REFERENCES types_conge(id)
+
+CREATE TABLE conges(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    employe_id INTEGER,
+    type_conge_id INTEGER,
+    date_debut TEXT,
+    date_fin TEXT,
+    nb_jours INTEGER,
+    motif TEXT,
+    statut TEXT,
+    commentaire_rh TEXT,
+    created_at TEXT,
+    traiter_par TEXT,
+    FOREIGN KEY (employe_id) REFERENCES employes(id),
+    FOREIGN KEY (type_conge_id) REFERENCES types_conge(id)
 );
+
+-- Notes:
+-- - Boolean fields are stored as INTEGER (0/1).
+-- - DATE/TIMESTAMP fields are stored as TEXT (ISO 8601 recommended).
+-- - SQLite ignores VARCHAR length; TEXT used instead.
