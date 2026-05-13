@@ -3,7 +3,7 @@
 
     use CodeIgniter\Model;
 
-    class Departement extends Model {
+    class Departements extends Model {
         protected $table = "departements";
         protected $primaryKey = "id";
         protected $returnType = "array";
