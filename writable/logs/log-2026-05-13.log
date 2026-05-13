@@ -77,3 +77,22 @@ in SYSTEMPATH/Model.php on line 678.
  9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 11 SYSTEMPATH/rewrite.php(44): require_once('/home/chiu/Documents/S4/Systeme d\'information/Exo/TechMada/public/index.php')
+DEBUG - 2026-05-13 09:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-13 09:28:32 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Departements"
+[Method: POST, Route: admin/departement/save]
+in SYSTEMPATH/Model.php on line 678.
+ 1 SYSTEMPATH/Model.php(678): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Departements')
+ 2 SYSTEMPATH/BaseModel.php(880): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Admin.php(99): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Admin->saveDepartement()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/TechMada/public/index.php')
+DEBUG - 2026-05-13 09:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 09:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 09:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-13 09:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
