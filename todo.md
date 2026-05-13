@@ -1,5 +1,5 @@
 ## Création de la base de données (Chiu Tien) 
-    - [] employes 
+    - [x] employes 
         - id 
         - nom 
         - email 
@@ -9,18 +9,18 @@
         - date_embauche 
         - actif 
     
-    - [] departments 
+    - [x] departments 
         - id 
         - nom 
         - description 
 
-    - [] types_conge 
+    - [x] types_conge 
         - id 
         - libelle 
         - jours_annuels 
         - deductible 
 
-    - [] soldes 
+    - [x] soldes 
         - id 
         - employe_id 
         - type_conge_id 
@@ -30,7 +30,7 @@
         - restant 
         - pris
     
-    - [] conges 
+    - [x] conges 
         - id 
         - employe_id 
         - type_conge_id 
@@ -46,7 +46,7 @@
 ## Fonctionnalités par rôles 
 
 ## Employe 
-    - [] Connexion / deconnexion 
+    - [] Connexion / deconnexion )
     - [] Soumettre une demande de conge 
     - [] Consulter ses propres demandes et leurs status 
     - [] Voir son solde de conge restant par type 
