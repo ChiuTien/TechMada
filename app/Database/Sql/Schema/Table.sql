@@ -1,3 +1,4 @@
+-- Active: 1778662518823@@127.0.0.1@3306
 -- Converted for SQLite
 PRAGMA foreign_keys = ON;
 
