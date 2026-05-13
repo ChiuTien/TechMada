@@ -9,8 +9,27 @@ class Home extends BaseController
         return view('Views/auth/login');
     }
 
+    public function login()
+    {
+        $email = (string) $this->request->getPost('email');
+        $password = (string) $this->request->getPost('password');
+
+        if ($email === 'admin@techmada.mg' && $password === 'admin123') {
+            return redirect()->to(base_url('admin/employe'));
+        }
+
+        session()->setFlashdata('error', 'Identifiants invalides.');
+
+        return redirect()->to(base_url('/'));
+    }
+
     public function dashboard()
     {
         return view('Views/employe/dashboard');
+    }
+
+    public function adminEmploye()
+    {
+        return view('Views/admin/employe');
     }
 }
