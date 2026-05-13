@@ -7,7 +7,7 @@
         protected $table = "departements";
         protected $primaryKey = "id";
         protected $returnType = "array";
-        protected $allowFields = [
+        protected $allowedFields = [
             "nom",
             "description"
         ];
