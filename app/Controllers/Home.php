@@ -16,6 +16,8 @@ class Home extends BaseController
 
         if ($email === 'admin@techmada.mg' && $password === 'admin123') {
             return redirect()->to(base_url('admin/employe'));
+        } else if ($email === 'employe@techmada.mg' && $password === 'emp123') {
+            return redirect()->to(base_url('employe/dashboard'));
         }
 
         session()->setFlashdata('error', 'Identifiants invalides.');
