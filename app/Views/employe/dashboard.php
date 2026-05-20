@@ -42,7 +42,7 @@
         <div class="topbar-breadcrumb">Accueil</div>
       </div>
       <div class="topbar-actions">
-        <a href="#page-form-conge" class="btn-forest" style="padding:7px 14px;font-size:.82rem">
+        <a href="<?= base_url('/employe/create') ?>" class="btn-forest" style="padding:7px 14px;font-size:.82rem">
           <i class="bi bi-plus-lg"></i> Nouvelle demande
         </a>
       </div>
