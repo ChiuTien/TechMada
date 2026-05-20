@@ -54,7 +54,7 @@ $Typeconge = $Typeconge ?? [];
                 <option value=""selected>-- Choisir un type --</option>
                 <!-- <option value="1" selected>Congé annuel (18 j restants)</option> -->
                  <?php foreach ($Typeconge as $tc) { ?>
-                    <option value="<?= esc($tc['id']) ?>"><?= esc($tc['libelle']) ?></option>
+                    <option value="<?= esc($tc['id']) ?>">Conge(<?= esc($tc['libelle'])?>) (<?= esc($tc['jours_annuels']) ?> j maximum)</option>
                  <?php } ?>
               </select>
               <!-- Erreur validation CI4 -->
