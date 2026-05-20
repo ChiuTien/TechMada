@@ -10,7 +10,7 @@ $routes->post('/login', 'Home::login');
 
 //Employe 
 $routes->get('/employe/dashboard', 'Home::dashboard');
-$routes->get('/employe/create', 'Home::create');
+$routes->get('/employe/create', 'Employe::getAllObjectifs');
 
 // Administration CRUD
 $routes->get('/admin/employe', 'Admin::employes');
