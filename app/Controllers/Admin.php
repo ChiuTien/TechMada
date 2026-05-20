@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\Departements;
 use App\Models\Employes;
 use App\Models\TypeConge;
+use App\Models\Conges;
 
 class Admin extends BaseController
 {
@@ -134,5 +135,37 @@ class Admin extends BaseController
         (new TypeConge())->delete($id);
 
         return redirect()->to(base_url('admin/employe'))->with('success', 'Type de congé supprimé.');
+    }
+
+    public function approveConge(int $id)
+    {
+        $model = new Conges();
+        $comment = (string) $this->request->getPost('commentaire_rh');
+
+        $payload = [
+            'statut' => 'approuvee',
+            'commentaire_rh' => $comment,
+            'traiter_par' => 'RH',
+        ];
+
+        $model->update($id, $payload);
+
+        return redirect()->back()->with('success', 'Demande approuvée.');
+    }
+
+    public function rejectConge(int $id)
+    {
+        $model = new Conges();
+        $comment = (string) $this->request->getPost('commentaire_rh');
+
+        $payload = [
+            'statut' => 'refusee',
+            'commentaire_rh' => $comment,
+            'traiter_par' => 'RH',
+        ];
+
+        $model->update($id, $payload);
+
+        return redirect()->back()->with('success', 'Demande refusée.');
     }
 }
