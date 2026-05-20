@@ -10,6 +10,7 @@ $routes->post('/login', 'Home::login');
 
 //Employe 
 $routes->get('/employe/dashboard', 'Home::dashboard');
+$routes->get('/employe/create', 'Home::create');
 
 // Administration CRUD
 $routes->get('/admin/employe', 'Admin::employes');

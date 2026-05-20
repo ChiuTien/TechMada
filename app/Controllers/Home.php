@@ -30,6 +30,11 @@ class Home extends BaseController
         return view('Views/employe/dashboard');
     }
 
+    public function create() 
+    {
+        return view('Views/employe/create');
+    }
+
     public function adminEmploye()
     {
         return view('Views/admin/employe');
