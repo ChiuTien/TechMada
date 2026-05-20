@@ -11,6 +11,8 @@ $routes->post('/login', 'Home::login');
 //Employe 
 $routes->get('/employe/dashboard', 'Home::dashboard');
 $routes->get('/employe/create', 'Employe::getAllObjectifs');
+$routes->post('/employe/create/save', 'Employe::storeConge');
+$routes->get('/employe/index', 'Home::storeConge');
 
 // Administration CRUD
 $routes->get('/admin/employe', 'Admin::employes');

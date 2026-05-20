@@ -2,54 +2,102 @@
 namespace App\Controllers;
 
 use App\Models\TypeConge;
+use App\Models\Conge;
+use CodeIgniter\Exceptions\PageNotFoundException; // Ne pas oublier l'import pour éviter les crashs
 
 class Employe extends BaseController 
 {
     protected $TypeConge;
+    protected $Conge; 
 
+    // 1. UN SEUL CONSTRUCTEUR POUR LES DEUX MODÈLES
     public function __construct() {
-            $this->TypeConge = new TypeConge();
-        }
+        $this->TypeConge = new TypeConge();
+        $this->Conge = new Conge();
+    }
 
-        private function findOrFail($id) {
-            $typeconge = $this->TypeConge->find($id);
-            if($typeconge == null) {
-                throw new PageNotFoundException("TypeConge non trouvé");
-            }
-            return $typeconge;
-        }
-        private function getFormData() {
-            return [
-                "libelle" => $this->request->getPost("libelle"),
-                "jours_annuels" => $this->request->getPost("jours_annuels"),
-                "deductible" => $this->request->getPost("deductible")
-            ];
-        }
+    // ==========================================
+    // BLOC : TYPES DE CONGÉ
+    // ==========================================
 
-        public function getAllObjectifs() {
-            $data["Typeconge"] = $this->TypeConge->findAll();
-            return view("employe/create",$data);
+    private function findTypeCongeOrFail($id) {
+        $typeconge = $this->TypeConge->find($id);
+        if($typeconge == null) {
+            throw new PageNotFoundException("TypeConge non trouvé");
         }
-        public function getTypecongeById($id) {
-            $data["Typeconge"] = $this->findOrFail($id);
-            return view("Typeconge/Element",$data);
-        }
-        public function createTypeconge() {
-            $data = $this->getFormData();
-            $this->TypeConge->insert($data);
-            return redirect()->to("/Typeconge");
-        }
-        public function updateTypeconge($id) {
-            $data = $this->getFormData();
+        return $typeconge;
+    }
 
-            $this->findOrFail($id);
-            $this->TypeConge->update($id,$data);
-            return redirect()->to("/Typeconges");
-        } 
-        public function deleteTypeconge($id) {
-            $this->findOrFail($id);
-            $this->TypeConge->delete($id);
-            return redirect()->to("/Typeconge");
+    private function getTypeCongeFormData() {
+        return [
+            "libelle" => $this->request->getPost("libelle"),
+            "jours_annuels" => $this->request->getPost("jours_annuels"),
+            "deductible" => $this->request->getPost("deductible")
+        ];
+    }
+
+    public function createTypeconge() {
+        $data = $this->getTypeCongeFormData();
+        $this->TypeConge->insert($data);
+        return redirect()->to("/Typeconge");
+    }
+
+    public function updateTypeconge($id) {
+        $data = $this->getTypeCongeFormData();
+        $this->findTypeCongeOrFail($id);
+        $this->TypeConge->update($id, $data);
+        return redirect()->to("/Typeconges");
+    } 
+
+    public function deleteTypeconge($id) {
+        $this->findTypeCongeOrFail($id);
+        $this->TypeConge->delete($id);
+        return redirect()->to("/Typeconge");
+    }
+
+
+    // ==========================================
+    // BLOC : DEMANDES DE CONGÉS (L'EMPLOYÉ)
+    // ==========================================
+
+    // C'est cette méthode qui charge ton formulaire de demande !
+    public function getAllObjectifs() {
+        // On récupère la liste des types de congés pour remplir ton <select>
+        $data["Typeconge"] = $this->TypeConge->findAll();
+        
+        // Si tu as aussi besoin de l'historique des demandes de l'employé sur la page :
+        $data["MesConges"] = $this->Conge->findAll(); 
+
+        return view("employe/create", $data);
+    }
+
+    private function findCongeOrFail($id) {
+        $conge = $this->Conge->find($id);
+        if($conge == null) {
+            throw new PageNotFoundException("Demande de congé non trouvée");
         }
+        return $conge;
+    }
+
+    private function getCongeFormData() {
+        return [
+            "employe_id"        => $this->request->getPost("employe_id"), // adapter selon tes colonnes de la table conge
+            "type_conge_id"     => $this->request->getPost("type_conge_id"),
+            "date_debut"        => $this->request->getPost("date_debut"),
+            "date_fin"          => $this->request->getPost("date_fin"),
+            "nb_jours"          => $this->request->getPost("nb_jours"),
+            "motif"             => $this->request->getPost("motif"),
+            "statut"            => $this->request->getPost("statut"),
+            "commentaire_rh"    => $this->request->getPost("commentaire_rh"),
+            "created_at"        => $this->request->getPost("created_at"),
+            "traiter_par"       => $this->request->getPost("traiter_par"),
+        ];
+    }
+
+    // Pour enregistrer une nouvelle demande de congé soumise par l'employé
+    public function storeConge() {
+        $data = $this->getCongeFormData();
+        $this->Conge->insert($data);
+        return redirect()->to("/employe/index"); // ou vers ton tableau de bord
+    }
 }
-?>

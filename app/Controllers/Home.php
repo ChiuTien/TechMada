@@ -35,6 +35,11 @@ class Home extends BaseController
         return view('Views/employe/create');
     }
 
+    public function storeConge()
+    {
+        return view('Views/employe/index');
+    }
+
     public function adminEmploye()
     {
         return view('Views/admin/employe');
