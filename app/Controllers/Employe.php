@@ -2,18 +2,18 @@
 namespace App\Controllers;
 
 use App\Models\TypeConge;
-use App\Models\Conge;
+use App\Models\Conges;
 use CodeIgniter\Exceptions\PageNotFoundException; // Ne pas oublier l'import pour éviter les crashs
 
 class Employe extends BaseController 
 {
     protected $TypeConge;
-    protected $Conge; 
+    protected $Conges; 
 
     // 1. UN SEUL CONSTRUCTEUR POUR LES DEUX MODÈLES
     public function __construct() {
         $this->TypeConge = new TypeConge();
-        $this->Conge = new Conge();
+        $this->Conges = new Conges();
     }
 
     // ==========================================
@@ -66,13 +66,13 @@ class Employe extends BaseController
         $data["Typeconge"] = $this->TypeConge->findAll();
         
         // Si tu as aussi besoin de l'historique des demandes de l'employé sur la page :
-        $data["MesConges"] = $this->Conge->findAll(); 
+        $data["Conges"] = $this->Conges->findAll(); 
 
         return view("employe/create", $data);
     }
 
     private function findCongeOrFail($id) {
-        $conge = $this->Conge->find($id);
+        $conge = $this->Conges->find($id);
         if($conge == null) {
             throw new PageNotFoundException("Demande de congé non trouvée");
         }
@@ -97,7 +97,7 @@ class Employe extends BaseController
     // Pour enregistrer une nouvelle demande de congé soumise par l'employé
     public function storeConge() {
         $data = $this->getCongeFormData();
-        $this->Conge->insert($data);
+        $this->Conges->insert($data);
         return redirect()->to("/employe/index"); // ou vers ton tableau de bord
     }
 }

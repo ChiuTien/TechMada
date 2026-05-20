@@ -85,7 +85,7 @@ $Typeconge = $Typeconge ?? [];
             </div>
 
             <div class="form-actions">
-              <button class="btn-forest" type="submit"><i class="bi bi-send"></i> Soumettre la demande</button>
+              <a href="<?= base_url('employe/index') ?>" class="btn-forest" type="submit"><i class="bi bi-send"></i> Soumettre la demande</a>
               <a href="#page-dashboard-employe" class="btn-secondary"><i class="bi bi-x"></i> Annuler</a>
             </div>
           </div>
