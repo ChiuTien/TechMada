@@ -65,11 +65,11 @@ $Typeconge = $Typeconge ?? [];
             <div class="form-grid-2" style="margin-bottom:1rem">
               <div class="f-group">
                 <label class="f-label">Date de début <span style="color:var(--danger)">*</span></label>
-                <input type="date" class="f-input" value="2025-06-23"/>
+                <input type="date" class="f-input" name="date_debut" value="2025-06-23"/>
               </div>
               <div class="f-group">
                 <label class="f-label">Date de fin <span style="color:var(--danger)">*</span></label>
-                <input type="date" class="f-input" value="2025-06-27"/>
+                <input type="date" class="f-input" name="date_fin" value="2025-06-27"/>
               </div>
             </div>
 

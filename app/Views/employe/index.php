@@ -1,3 +1,7 @@
+<?php 
+$Conges = $Conges ?? [];
+?>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
     <link href="<?= base_url('css/project.css') ?>" rel="stylesheet"/>
@@ -31,7 +35,7 @@
         <div class="topbar-breadcrumb"><a href="#page-dashboard-employe">Accueil</a> <i class="bi bi-chevron-right" style="font-size:.6rem"></i> Mes demandes</div>
       </div>
       <div class="topbar-actions">
-        <a href="#page-form-conge" class="btn-forest" style="padding:7px 14px;font-size:.82rem"><i class="bi bi-plus-lg"></i> Nouvelle demande</a>
+        <a href="<?= base_url('employe/create') ?>" class="btn-forest" style="padding:7px 14px;font-size:.82rem"><i class="bi bi-plus-lg"></i> Nouvelle demande</a>
       </div>
     </div>
 
@@ -54,7 +58,7 @@
             <tr><th>Type</th><th>Début</th><th>Fin</th><th>Durée</th><th>Statut</th><th>Commentaire RH</th><th>Action</th></tr>
           </thead>
           <tbody>
-            <tr>
+            <!-- <tr>
               <td><span class="type-badge t-annuel">Annuel</span></td>
               <td class="td-muted">23 juin 2025</td>
               <td class="td-muted">27 juin 2025</td>
@@ -62,43 +66,19 @@
               <td><span class="statut s-attente">en attente</span></td>
               <td class="td-muted" style="font-size:.78rem">—</td>
               <td><button class="btn-sm btn-cancel"><i class="bi bi-x"></i> Annuler</button></td>
-            </tr>
-            <tr>
-              <td><span class="type-badge t-maladie">Maladie</span></td>
-              <td class="td-muted">2 juin 2025</td>
-              <td class="td-muted">3 juin 2025</td>
-              <td class="td-mono">2 j</td>
-              <td><span class="statut s-approuvee">approuvée</span></td>
-              <td style="font-size:.78rem;color:var(--success)"><i class="bi bi-check-circle"></i> Validé</td>
-              <td><span class="td-muted" style="font-size:.75rem">—</span></td>
-            </tr>
-            <tr>
-              <td><span class="type-badge t-annuel">Annuel</span></td>
-              <td class="td-muted">12 mai 2025</td>
-              <td class="td-muted">16 mai 2025</td>
-              <td class="td-mono">5 j</td>
-              <td><span class="statut s-approuvee">approuvée</span></td>
-              <td style="font-size:.78rem;color:var(--success)"><i class="bi bi-check-circle"></i> OK</td>
-              <td><span class="td-muted" style="font-size:.75rem">—</span></td>
-            </tr>
-            <tr>
-              <td><span class="type-badge t-special">Spécial</span></td>
-              <td class="td-muted">5 avr. 2025</td>
-              <td class="td-muted">5 avr. 2025</td>
-              <td class="td-mono">1 j</td>
-              <td><span class="statut s-refusee">refusée</span></td>
-              <td style="font-size:.78rem;color:var(--danger)">Chevauchement détecté</td>
-              <td><span class="td-muted" style="font-size:.75rem">—</span></td>
-            </tr>
-            <tr>
-              <td><span class="type-badge t-sans-solde">Sans solde</span></td>
-              <td class="td-muted">10 mars 2025</td>
-              <td class="td-muted">12 mars 2025</td>
-              <td class="td-mono">3 j</td>
-              <td><span class="statut s-annulee">annulée</span></td>
-              <td class="td-muted" style="font-size:.78rem">Annulé par l'employé</td>
-              <td><span class="td-muted" style="font-size:.75rem">—</span></td>
-            </tr>
+            </tr> -->
+            <?php foreach ($Conges as $cg) { ?>
+              <tr>
+                <td><span class="type-badge t-annuel"><?= esc($cg['type_conge_id']) ?></td>
+                <td class="td-muted"><?= esc($cg['date_debut']) ?></td>
+                <td class="td-muted"><?= esc($cg['date_fin'])?></td>
+                <td class="td-mono"><?= esc($cg['nb_jours'])?></td>
+                <td><span class="statut s-attente"><?= esc([$cg['statut']]) ?></span></td>
+                <td class="td-muted" style="font-size:.78rem">—</td>
+                <td><button class="btn-sm btn-cancel"><i class="bi bi-x"></i> Annuler</button></td>
+              </tr>
+            <?php } ?>
+            
           </tbody>
         </table>
       </div>
