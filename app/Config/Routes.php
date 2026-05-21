@@ -10,9 +10,9 @@ $routes->post('/login', 'Home::login');
 
 //Employe 
 $routes->get('/employe/dashboard', 'Home::dashboard');
-$routes->get('/employe/create', 'Employe::getAllObjectifs');
+$routes->get('/employe/create', 'Employe::getAllTypeConge');
 $routes->post('/employe/create/save', 'Employe::storeConge');
-$routes->get('/employe/index', 'Home::storeConge');
+$routes->get('/employe/index', 'Employe::getAllConge');
 
 // Administration CRUD
 $routes->get('/admin/employe', 'Admin::employes');

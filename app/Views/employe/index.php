@@ -73,7 +73,7 @@ $Conges = $Conges ?? [];
                 <td class="td-muted"><?= esc($cg['date_debut']) ?></td>
                 <td class="td-muted"><?= esc($cg['date_fin'])?></td>
                 <td class="td-mono"><?= esc($cg['nb_jours'])?></td>
-                <td><span class="statut s-attente"><?= esc([$cg['statut']]) ?></span></td>
+                <td><span class="statut s-attente"><?= esc($cg['statut']) ?></span></td>
                 <td class="td-muted" style="font-size:.78rem">—</td>
                 <td><button class="btn-sm btn-cancel"><i class="bi bi-x"></i> Annuler</button></td>
               </tr>

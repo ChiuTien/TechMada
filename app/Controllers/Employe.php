@@ -36,6 +36,12 @@ class Employe extends BaseController
         ];
     }
 
+    public function getAllTypeConge() {
+        // On récupère la liste des types de congés pour remplir ton <select>
+        $data["Typeconge"] = $this->TypeConge->findAll();
+        return view("employe/create", $data);
+    }
+
     public function createTypeconge() {
         $data = $this->getTypeCongeFormData();
         $this->TypeConge->insert($data);
@@ -61,14 +67,12 @@ class Employe extends BaseController
     // ==========================================
 
     // C'est cette méthode qui charge ton formulaire de demande !
-    public function getAllObjectifs() {
-        // On récupère la liste des types de congés pour remplir ton <select>
-        $data["Typeconge"] = $this->TypeConge->findAll();
+    public function getAllConge() {
         
         // Si tu as aussi besoin de l'historique des demandes de l'employé sur la page :
         $data["Conges"] = $this->Conges->findAll(); 
 
-        return view("employe/create", $data);
+        return view("employe/index", $data);
     }
 
     private function findCongeOrFail($id) {
