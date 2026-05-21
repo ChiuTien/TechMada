@@ -14,6 +14,9 @@ $routes->get('/employe/create', 'Employe::getAllTypeConge');
 $routes->post('/employe/create/save', 'Employe::storeConge');
 $routes->get('/employe/index', 'Employe::getAllConge');
 
+//Rh
+$routes->get('/rh/index', 'Home::rh');
+
 // Administration CRUD
 $routes->get('/admin/employe', 'Admin::employes');
 $routes->post('/admin/employe/save', 'Admin::saveEmploye');

@@ -18,6 +18,8 @@ class Home extends BaseController
             return redirect()->to(base_url('admin/employe'));
         } else if ($email === 'employe@techmada.mg' && $password === 'emp123') {
             return redirect()->to(base_url('employe/dashboard'));
+        } else {
+            return redirect()->to(base_url('rh/index'));
         }
 
         session()->setFlashdata('error', 'Identifiants invalides.');
@@ -43,5 +45,10 @@ class Home extends BaseController
     public function adminEmploye()
     {
         return view('Views/admin/employe');
+    }
+
+    public function rh() 
+    {
+        return view('Views/rh/index');
     }
 }
