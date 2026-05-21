@@ -103,7 +103,7 @@ class Employe extends BaseController
             "motif"             => $this->request->getPost("motif"),
             "statut"            => $this->request->getPost("statut"),
             "commentaire_rh"    => $this->request->getPost("commentaire_rh"),
-            "created_at"        => $this->request->getPost("created_at"),
+            "created_at"        => date('Y-m-d'),
             "traiter_par"       => $this->request->getPost("traiter_par"),
         ];
     }
