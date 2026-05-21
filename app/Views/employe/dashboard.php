@@ -152,7 +152,9 @@
       </div>
 
     </div>
-    <div class="footer-app"><i class="bi bi-c-circle"></i> 2025 <span>TechMada RH</span> — Projet CodeIgniter 4</div>
+    <?php 
+    view('includes/footer');
+    ?>
   </div>
 
 </div>

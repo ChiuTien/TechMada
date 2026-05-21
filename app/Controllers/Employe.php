@@ -75,6 +75,10 @@ class Employe extends BaseController
         return view("employe/index", $data);
     }
 
+    public function CountConge() {
+        return $this->Conges->countAll();
+    }
+
     private function findCongeOrFail($id) {
         $conge = $this->Conges->find($id);
         if($conge == null) {
