@@ -72,6 +72,11 @@ $Typeconge = $Typeconge ?? [];
               </div>
             </div>
 
+            <div class="f-group" style="margin-bottom:1rem">
+              <label for="f-label">Nombre de jours</label>
+              <input type="number" class="f-input" name="nb_jours" value="5" >
+            </div>
+
             <!-- Calcul automatique côté PHP (affiché après soumission ou en JS) -->
             <div class="f-computed">
               <div class="f-computed-num">5</div>
