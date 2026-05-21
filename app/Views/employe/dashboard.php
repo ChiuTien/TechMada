@@ -120,7 +120,7 @@ $Nb_conge = $Nb_conge ?? 5;
       <div class="data-card">
         <div class="data-card-head">
           <h3>Mes dernières demandes</h3>
-          <a href="#page-mes-conges" style="font-size:.8rem;color:var(--forest);text-decoration:none">Voir tout →</a>
+          <a href="<?= base_url('employe/index') ?>" style="font-size:.8rem;color:var(--forest);text-decoration:none">Voir tout →</a>
         </div>
         <table class="tbl">
           <thead>
