@@ -84,6 +84,8 @@ $Typeconge = $Typeconge ?? [];
               <div class="f-hint">Le motif est visible par le responsable</div>
             </div>
 
+            <input type="hidden" name="statut" value="En attente">
+
             <div class="form-actions">
               <a href="<?= base_url('employe/index') ?>" class="btn-forest" type="submit"><i class="bi bi-send"></i> Soumettre la demande</a>
               <a href="#page-dashboard-employe" class="btn-secondary"><i class="bi bi-x"></i> Annuler</a>
