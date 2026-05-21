@@ -72,21 +72,16 @@ $Typeconge = $Typeconge ?? [];
               </div>
             </div>
 
+            <!-- Calcul automatique côté PHP (affiché après soumission ou en JS) -->
             <div class="f-group" style="margin-bottom:1rem">
               <label for="f-label">Nombre de jours</label>
               <input type="number" class="f-input" name="nb_jours" value="5" >
             </div>
 
-            <!-- Calcul automatique côté PHP (affiché après soumission ou en JS) -->
-            <div class="f-computed">
-              <div class="f-computed-num">5</div>
-              <div class="f-computed-label">jours calendaires calculés<br><span style="font-size:.7rem;opacity:.7">du lundi 23 au vendredi 27 juin 2025</span></div>
-            </div>
-
             <div class="f-group" style="margin-bottom:1rem">
-              <label class="f-label">Motif (optionnel)</label>
-              <textarea class="f-textarea" placeholder="Précisez le motif de votre demande si nécessaire..."></textarea>
-              <div class="f-hint">Le motif est visible par le responsable RH.</div>
+              <label for="f-label">Motif</label>
+              <textarea class="f-textarea" name="motif" placeholder="Préciser le motif de votre demande ....."></textarea>
+              <div class="f-hint">Le motif est visible par le responsable</div>
             </div>
 
             <div class="form-actions">
