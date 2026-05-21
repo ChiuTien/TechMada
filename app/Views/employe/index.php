@@ -9,25 +9,9 @@ $Conges = $Conges ?? [];
 <section id="page-mes-conges" style="margin-top:3rem">
 <div class="app-wrap">
 
-  <aside class="sidebar">
-    <div class="sidebar-brand">
-      <div class="sidebar-logo-icon"><i class="bi bi-briefcase"></i></div>
-      <div class="sidebar-brand-name">TechMada RH<span>Espace employé</span></div>
-    </div>
-    <ul class="sidebar-nav" style="margin-top:1rem">
-      <li><a href="<?= base_url('employe/dashboard') ?>"><i class="bi bi-grid-1x2"></i> Tableau de bord</a></li>
-      <li><a href="<?= base_url('employe/create') ?>"><i class="bi bi-plus-circle"></i> Nouvelle demande</a></li>
-      <li><a href="<?= base_url('employe/index') ?>" class="active"><i class="bi bi-calendar3"></i> Mes demandes</a></li>
-      <li><a href="#page-profil-employe"><i class="bi bi-person"></i> Mon profil</a></li>
-    </ul>
-    <div class="sidebar-user">
-      <div class="s-user-row">
-        <div class="avatar av-green">SR</div>
-        <div><div class="user-name">Soa Rakoto</div><div class="user-role">Employé · IT</div></div>
-      </div>
-    </div>
-  </aside>
-
+<!-- SIDEBAR DE L'EMPLOYE -->
+   <?php include(__DIR__ . '/sidebar.php') ?>
+  
   <div class="main">
     <div class="topbar">
       <div>
@@ -58,15 +42,6 @@ $Conges = $Conges ?? [];
             <tr><th>Type</th><th>Début</th><th>Fin</th><th>Durée</th><th>Statut</th><th>Commentaire RH</th><th>Action</th></tr>
           </thead>
           <tbody>
-            <!-- <tr>
-              <td><span class="type-badge t-annuel">Annuel</span></td>
-              <td class="td-muted">23 juin 2025</td>
-              <td class="td-muted">27 juin 2025</td>
-              <td class="td-mono">5 j</td>
-              <td><span class="statut s-attente">en attente</span></td>
-              <td class="td-muted" style="font-size:.78rem">—</td>
-              <td><button class="btn-sm btn-cancel"><i class="bi bi-x"></i> Annuler</button></td>
-            </tr> -->
             <?php foreach ($Conges as $cg) { ?>
               <tr>
                 <td><span class="type-badge t-annuel"><?= esc($cg['type_conge_id']) ?></td>

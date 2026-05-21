@@ -482,3 +482,51 @@ in APPPATH/Views/employe/dashboard.php on line 25.
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 16:52:42 --> ErrorException: include(employe/sidebar): Failed to open stream: No such file or directory
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 20.
+ 1 APPPATH/Views/employe/dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/employe/dashboard.php(20): include()
+ 3 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 4 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Employe.php(82): view()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Employe->CountConge()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 16:58:34 --> ErrorException: Undefined variable $Nb_conge
+[Method: GET, Route: employe/create]
+in APPPATH/Views/employe/sidebar.php on line 13.
+ 1 APPPATH/Views/employe/sidebar.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/employe/create.php(14): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/create.php')
+ 4 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Employe.php(42): view()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Employe->getAllTypeConge()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 16:58:47 --> ErrorException: Undefined variable $Nb_conge
+[Method: GET, Route: employe/index]
+in APPPATH/Views/employe/sidebar.php on line 13.
+ 1 APPPATH/Views/employe/sidebar.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/employe/index.php(13): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/index.php')
+ 4 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Employe.php(75): view()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Employe->getAllConge()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
