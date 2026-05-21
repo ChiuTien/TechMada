@@ -15,9 +15,9 @@ $Typeconge = $Typeconge ?? [];
       <div class="sidebar-brand-name">TechMada RH<span>Espace employé</span></div>
     </div>
     <ul class="sidebar-nav" style="margin-top:1rem">
-      <li><a href="#page-dashboard-employe"><i class="bi bi-grid-1x2"></i> Tableau de bord</a></li>
-      <li><a href="#page-form-conge" class="active"><i class="bi bi-plus-circle"></i> Nouvelle demande</a></li>
-      <li><a href="#page-mes-conges"><i class="bi bi-calendar3"></i> Mes demandes</a></li>
+      <li><a href="<?= base_url('employe/dashboard') ?>"><i class="bi bi-grid-1x2"></i> Tableau de bord</a></li>
+      <li><a href="<?= base_url('employe/create') ?>" class="active"><i class="bi bi-plus-circle"></i> Nouvelle demande</a></li>
+      <li><a href="<?= base_url('employe/index')?>"><i class="bi bi-calendar3"></i> Mes demandes</a></li>
       <li><a href="#page-profil-employe"><i class="bi bi-person"></i> Mon profil</a></li>
     </ul>
     <div class="sidebar-user">
@@ -45,6 +45,7 @@ $Typeconge = $Typeconge ?? [];
 
         <!-- Formulaire principal -->
         <div>
+          <form action="<?= base_url('/employe/create/save') ?>" method="post">
           <div class="form-section">
             <h3>Détails de la demande</h3>
 
@@ -87,11 +88,12 @@ $Typeconge = $Typeconge ?? [];
             <input type="hidden" name="statut" value="En attente">
 
             <div class="form-actions">
-              <a href="<?= base_url('employe/index') ?>" class="btn-forest" type="submit"><i class="bi bi-send"></i> Soumettre la demande</a>
-              <a href="#page-dashboard-employe" class="btn-secondary"><i class="bi bi-x"></i> Annuler</a>
+              <button class="btn-forest" type="submit"><i class="bi bi-send"></i> Soumettre la demande</button>
+              <a href="#" class="btn-secondary"><i class="bi bi-x"></i> Annuler</a>
             </div>
           </div>
         </div>
+        </form>
 
         <!-- Panneau latéral : solde & règles -->
         <div style="display:flex;flex-direction:column;gap:1rem">
