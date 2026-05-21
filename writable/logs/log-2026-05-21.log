@@ -283,3 +283,202 @@ in APPPATH/Views/employe/create.php on line 143.
 11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 13 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:53:27 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:53:35 --> ErrorException: Cannot use [] for reading
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-05-21 13:54:00 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:56:57 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:56:58 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:56:58 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:56:58 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:56:59 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:56:59 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:56:59 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:56:59 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:56:59 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:56:59 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-21 13:57:00 --> ErrorException: Array to string conversion
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Views/employe/dashboard.php on line 25.
+ 1 APPPATH/Views/employe/dashboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Views/employe/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')

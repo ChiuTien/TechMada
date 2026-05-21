@@ -2,6 +2,10 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
 <link href="<?= base_url('css/project.css') ?>" rel="stylesheet"/>
 
+<?php 
+$Nb_conge = $Nb_conge ?? 5;
+?>
+
 <section id="page-dashboard-employe" style="margin-top:3rem">
 <div class="app-wrap">
 
@@ -18,7 +22,7 @@
       <li>
         <a href="<?= base_url('employe/index') ?>">
           <i class="bi bi-calendar3"></i> Mes demandes
-          <span class="nav-badge alert">2</span>
+          <span class="nav-badge alert"><?= $Nb_conge; ?></span>
         </a>
       </li>
       <li><a href="#page-profil-employe"><i class="bi bi-person"></i> Mon profil</a></li>

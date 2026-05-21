@@ -76,7 +76,10 @@ class Employe extends BaseController
     }
 
     public function CountConge() {
-        return $this->Conges->countAll();
+        // Compteur du nombre de conges 
+        $data["Nb_conge"]= (int)$this->Conges->countAllResults();
+
+        return view("employe/dashboard", $data);
     }
 
     private function findCongeOrFail($id) {
