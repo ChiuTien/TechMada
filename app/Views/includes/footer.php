@@ -1,0 +1,1 @@
+<div class="footer-app"><i class="bi bi-c-circle"></i> 2025 <span>TechMada RH</span></div>
