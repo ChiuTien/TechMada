@@ -36,7 +36,7 @@ $Typeconge = $Typeconge ?? [];
 
             <div class="f-group" style="margin-bottom:1rem">
               <label class="f-label">Type de congé <span style="color:var(--danger)">*</span></label>
-              <select class="f-select">
+              <select name="type_conge_id" id="type_conge" class="f-select">
                 <option value=""selected>-- Choisir un type --</option>
                 <!-- <option value="1" selected>Congé annuel (18 j restants)</option> -->
                  <?php foreach ($Typeconge as $tc) { ?>

@@ -91,8 +91,11 @@ class Employe extends BaseController
     }
 
     private function getCongeFormData() {
+        //Maka session ana utilisateur 
+        $session = session();
+
         return [
-            "employe_id"        => $this->request->getPost("employe_id"), // adapter selon tes colonnes de la table conge
+            "employe_id"        => $session->get("employe_id"), // adapter selon tes colonnes de la table conge
             "type_conge_id"     => $this->request->getPost("type_conge_id"),
             "date_debut"        => $this->request->getPost("date_debut"),
             "date_fin"          => $this->request->getPost("date_fin"),
