@@ -45,8 +45,7 @@ $CongeAttente = $CongeAttente ?? [];
         </select>
       </div>
 
-      <form action="<?= base_url("/rh/approuveConge") ?>" method="post">
-
+      
       <div class="data-card">
         <div class="data-card-head"><h3>Toutes les demandes</h3></div>
         <table class="tbl">
@@ -56,7 +55,8 @@ $CongeAttente = $CongeAttente ?? [];
           <tbody>
             <!-- En attente — actions disponibles -->
             <?php foreach ($CongeAttente as $ca) { ?>
-                <tr>
+            <tr>
+                  <form action="<?= base_url("/rh/approuveConge") ?>" method="post">
               <td>
                 <div class="profile-row">
                   <div class="avatar av-green" style="width:32px;height:32px;font-size:.7rem">SR</div>

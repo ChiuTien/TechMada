@@ -129,3 +129,57 @@ in APPPATH/Controllers/RessourceH.php on line 12.
  5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
  6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
  7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 19:07:00 --> Error: Call to undefined function App\Controllers\getPost()
+[Method: POST, Route: rh/approuveConge]
+in APPPATH/Controllers/RessourceH.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->approuverConge()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 19:13:18 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Conges::udpate
+[Method: POST, Route: rh/approuveConge]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/RessourceH.php(29): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->approuverConge()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 19:24:34 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Conges::udpate
+[Method: POST, Route: rh/approuveConge]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/RessourceH.php(29): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->approuverConge()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 19:28:24 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Conges::udpate
+[Method: POST, Route: rh/approuveConge]
+in SYSTEMPATH/Model.php on line 761.
+ 1 APPPATH/Controllers/RessourceH.php(29): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->approuverConge()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 19:31:39 --> TypeError: view(): Argument #2 ($data) must be of type array, true given, called in /home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/app/Controllers/RessourceH.php on line 31
+[Method: POST, Route: rh/approuveConge]
+in SYSTEMPATH/Common.php on line 1238.
+ 1 APPPATH/Controllers/RessourceH.php(31): view()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->approuverConge()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')

@@ -18,7 +18,7 @@ class RessourceH extends BaseController {
     }
 
     public function approuverConge() {
-        $id_conge = $this->request>getPost('id_conge');
+        $id_conge = $this->request->getPost('id_conge');
 
         if ($id_conge) {
             $statut_modifie = [
@@ -26,7 +26,7 @@ class RessourceH extends BaseController {
             ];
         }
 
-        $this->Conges->udpate($id_conge,$statut_modifie);
+        $this->Conges->update($id_conge,$statut_modifie);
 
         return redirect()->to(base_url('rh/list'));
     }
