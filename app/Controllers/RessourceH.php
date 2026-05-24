@@ -17,13 +17,22 @@ class RessourceH extends BaseController {
         return view('rh/index', $data);
     }
 
-    public function approuverConge() {
+    public function traiterConge() {
         $id_conge = $this->request->getPost('id_conge');
+        $action = $this->request->getPost('action');
 
         if ($id_conge) {
-            $statut_modifie = [
-                'statut' => 'approuve' 
-            ];
+
+            if ($action == "approuve") {
+                    $statut_modifie = [
+                    'statut' => 'approuve' 
+                ];
+            } else {
+                $statut_modifie = [
+                    'statut' => 'refuse' 
+                ];
+            }
+            
         }
 
         $this->Conges->update($id_conge,$statut_modifie);

@@ -56,7 +56,7 @@ $CongeAttente = $CongeAttente ?? [];
             <!-- En attente — actions disponibles -->
             <?php foreach ($CongeAttente as $ca) { ?>
             <tr>
-                  <form action="<?= base_url("/rh/approuveConge") ?>" method="post">
+                  <form action="<?= base_url("/rh/traiterConge") ?>" method="post">
               <td>
                 <div class="profile-row">
                   <div class="avatar av-green" style="width:32px;height:32px;font-size:.7rem">SR</div>
@@ -77,8 +77,8 @@ $CongeAttente = $CongeAttente ?? [];
               <input type="hidden" name="id_conge" value="<?= $ca['id'] ?>">
               <td>
                 <div class="action-btns">
-                  <button class="btn-sm btn-approve"><i class="bi bi-check-lg"></i> Approuver</button>
-                  <button class="btn-sm btn-refuse"><i class="bi bi-x-lg"></i> Refuser</button>
+                  <button class="btn-sm btn-approve" name="action" value="approuver"><i class="bi bi-check-lg"></i> Approuver</button>
+                  <button class="btn-sm btn-refuse" name="action" value="refuse"><i class="bi bi-x-lg"></i> Refuser</button>
                 </div>
               </td>
             </tr>    

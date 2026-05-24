@@ -17,7 +17,7 @@ $routes->get('/employe/index', 'Employe::getAllConge');
 //Rh
 $routes->get('/rh/index', 'Home::rh');
 $routes->get('/rh/list', 'RessourceH::getAllCongeAttente');
-$routes->post('/rh/approuveConge', 'RessourceH::approuverConge');
+$routes->post('/rh/traiterConge', 'RessourceH::traiterConge');
 
 // Administration CRUD
 $routes->get('/admin/employe', 'Admin::employes');
