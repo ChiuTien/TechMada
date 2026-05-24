@@ -1,0 +1,131 @@
+DEBUG - 2026-05-24 17:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-24 17:56:03 --> Error: Call to a member function where() on null
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 17:58:37 --> Error: Call to undefined method App\Controllers\RessourceH::Conges()
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 17:59:01 --> Error: Call to undefined method App\Controllers\RessourceH::Conges()
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 17:59:02 --> Error: Call to undefined method App\Controllers\RessourceH::Conges()
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 17:59:02 --> Error: Call to undefined method App\Controllers\RessourceH::Conges()
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 17:59:03 --> Error: Call to undefined method App\Controllers\RessourceH::Conges()
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 17:59:03 --> Error: Call to undefined method App\Controllers\RessourceH::Conges()
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 17:59:03 --> Error: Call to undefined method App\Controllers\RessourceH::Conges()
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 17:59:03 --> Error: Call to undefined method App\Controllers\RessourceH::Conges()
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 17:59:03 --> Error: Call to undefined method App\Controllers\RessourceH::Conges()
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 17:59:04 --> Error: Call to undefined method App\Controllers\RessourceH::Conges()
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 17:59:09 --> Error: Call to undefined method App\Controllers\RessourceH::Conges()
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')
+CRITICAL - 2026-05-24 18:00:41 --> Error: Call to a member function where() on null
+[Method: GET, Route: rh/list]
+in APPPATH/Controllers/RessourceH.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\RessourceH->getAllCongeAttente()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/home/balou/S4/SysInfo/a13hehh/ETU4339-ETU3914/public/index.php')

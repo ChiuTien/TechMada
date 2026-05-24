@@ -1,13 +1,19 @@
 <?php 
-namespace App\BaseController;
+namespace App\Controllers;
 
 use App\Models\Conges;
 
 class RessourceH extends BaseController {
     private $Conges;
 
+    public function __construct() {
+        $this->Conges = new Conges();   
+    }
+
     public function getAllCongeAttente() {
-        $data['CongeAttente']= $this->$Conges->where('statut', 'attente')->findAll();
+        
+
+        $data['CongeAttente']= $this->Conges->where('statut', 'En attente')->findAll();
 
         return view('rh/index', $data);
     }

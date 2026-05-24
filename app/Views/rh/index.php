@@ -5,7 +5,10 @@
 <section id="page-liste-rh" style="margin-top:3rem">
 <div class="app-wrap">
 
-<?php include(__DIR__ . '/sidebar.php'); ?>
+<?php 
+include(__DIR__ . '/sidebar.php'); 
+$CongeAttente = $CongeAttente ?? [];
+?>
 
   <div class="main">
     <div class="topbar">
@@ -50,81 +53,35 @@
           </thead>
           <tbody>
             <!-- En attente — actions disponibles -->
-            <tr>
+            <?php foreach ($CongeAttente as $ca) { ?>
+                <tr>
               <td>
                 <div class="profile-row">
                   <div class="avatar av-green" style="width:32px;height:32px;font-size:.7rem">SR</div>
                   <div class="profile-info">
-                    <div class="pname">Soa Rakoto</div>
+                    <div class="pname"><?= esc($ca['employe_id']) ?></div>
                     <div class="pdept">IT · 23 juin → 27 juin</div>
                   </div>
                 </div>
               </td>
-              <td><span class="type-badge t-annuel">Annuel</span></td>
-              <td class="td-muted" style="font-size:.8rem">23/06 – 27/06/2025</td>
-              <td class="td-mono">5 j</td>
+              <td><span class="type-badge t-annuel"></span></td>
+              <td class="td-muted" style="font-size:.8rem"><?= esc($ca['date_debut']) ?> – <?= esc($ca['date_fin']) ?></td>
+              <td class="td-mono"><?= esc($ca['nb_jours']) ?></td>
               <td>
                 <span style="font-family:'DM Mono',monospace;font-size:.82rem;color:var(--success);font-weight:500">18 j</span>
                 <span style="font-size:.72rem;color:var(--muted)"> dispo</span>
               </td>
-              <td><span class="statut s-attente">en attente</span></td>
+              <td><span class="statut s-attente"><?= esc($ca['statut']) ?></span></td>
               <td>
                 <div class="action-btns">
                   <button class="btn-sm btn-approve"><i class="bi bi-check-lg"></i> Approuver</button>
                   <button class="btn-sm btn-refuse"><i class="bi bi-x-lg"></i> Refuser</button>
                 </div>
               </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="profile-row">
-                  <div class="avatar av-amber" style="width:32px;height:32px;font-size:.7rem">TF</div>
-                  <div class="profile-info">
-                    <div class="pname">Tsiry Fidy</div>
-                    <div class="pdept">Finance</div>
-                  </div>
-                </div>
-              </td>
-              <td><span class="type-badge t-maladie">Maladie</span></td>
-              <td class="td-muted" style="font-size:.8rem">18/06 – 19/06/2025</td>
-              <td class="td-mono">2 j</td>
-              <td>
-                <span style="font-family:'DM Mono',monospace;font-size:.82rem;color:var(--warn);font-weight:500">1 j</span>
-                <span style="font-size:.72rem;color:var(--danger)"> ⚠ insuffisant</span>
-              </td>
-              <td><span class="statut s-attente">en attente</span></td>
-              <td>
-                <div class="action-btns">
-                  <button class="btn-sm btn-approve" disabled style="opacity:.4;cursor:not-allowed"><i class="bi bi-check-lg"></i> Approuver</button>
-                  <button class="btn-sm btn-refuse"><i class="bi bi-x-lg"></i> Refuser</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="profile-row">
-                  <div class="avatar av-blue" style="width:32px;height:32px;font-size:.7rem">HA</div>
-                  <div class="profile-info">
-                    <div class="pname">Haja Andria</div>
-                    <div class="pdept">Marketing</div>
-                  </div>
-                </div>
-              </td>
-              <td><span class="type-badge t-annuel">Annuel</span></td>
-              <td class="td-muted" style="font-size:.8rem">30/06 – 04/07/2025</td>
-              <td class="td-mono">5 j</td>
-              <td>
-                <span style="font-family:'DM Mono',monospace;font-size:.82rem;color:var(--success);font-weight:500">22 j</span>
-                <span style="font-size:.72rem;color:var(--muted)"> dispo</span>
-              </td>
-              <td><span class="statut s-attente">en attente</span></td>
-              <td>
-                <div class="action-btns">
-                  <button class="btn-sm btn-approve"><i class="bi bi-check-lg"></i> Approuver</button>
-                  <button class="btn-sm btn-refuse"><i class="bi bi-x-lg"></i> Refuser</button>
-                </div>
-              </td>
-            </tr>
+            </tr>    
+            <?php } ?>
+
+            
             <!-- Déjà traitées -->
             <tr>
               <td>
