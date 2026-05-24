@@ -16,5 +16,19 @@ class RessourceH extends BaseController {
 
         return view('rh/index', $data);
     }
+
+    public function approuverConge() {
+        $id_conge = $this->request>getPost('id_conge');
+
+        if ($id_conge) {
+            $statut_modifie = [
+                'statut' => 'approuve' 
+            ];
+        }
+
+        $this->Conges->udpate($id_conge,$statut_modifie);
+
+        return redirect()->to(base_url('rh/list'));
+    }
 }
 ?>

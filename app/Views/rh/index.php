@@ -45,7 +45,7 @@ $CongeAttente = $CongeAttente ?? [];
         </select>
       </div>
 
-      <form action="<?= base_url("rh/approuveConge") ?>" method="post">
+      <form action="<?= base_url("/rh/approuveConge") ?>" method="post">
 
       <div class="data-card">
         <div class="data-card-head"><h3>Toutes les demandes</h3></div>
