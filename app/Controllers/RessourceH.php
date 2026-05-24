@@ -12,7 +12,6 @@ class RessourceH extends BaseController {
 
     public function getAllCongeAttente() {
         
-
         $data['CongeAttente']= $this->Conges->where('statut', 'En attente')->findAll();
 
         return view('rh/index', $data);

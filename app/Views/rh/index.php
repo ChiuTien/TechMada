@@ -45,6 +45,8 @@ $CongeAttente = $CongeAttente ?? [];
         </select>
       </div>
 
+      <form action="<?= base_url("rh/approuveConge") ?>" method="post">
+
       <div class="data-card">
         <div class="data-card-head"><h3>Toutes les demandes</h3></div>
         <table class="tbl">
@@ -72,6 +74,7 @@ $CongeAttente = $CongeAttente ?? [];
                 <span style="font-size:.72rem;color:var(--muted)"> dispo</span>
               </td>
               <td><span class="statut s-attente"><?= esc($ca['statut']) ?></span></td>
+              <input type="hidden" name="id_conge" value="<?= $ca['id'] ?>">
               <td>
                 <div class="action-btns">
                   <button class="btn-sm btn-approve"><i class="bi bi-check-lg"></i> Approuver</button>
@@ -81,6 +84,7 @@ $CongeAttente = $CongeAttente ?? [];
             </tr>    
             <?php } ?>
 
+            </form>
             
             <!-- Déjà traitées -->
             <tr>
