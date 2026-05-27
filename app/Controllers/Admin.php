@@ -6,9 +6,15 @@ use App\Models\Departements;
 use App\Models\Employes;
 use App\Models\TypeConge;
 use App\Models\Conges;
+use App\Controllers\Solde;
 
 class Admin extends BaseController
 {
+
+    public function __construct() {
+        $this->Solde = new Solde();
+    }
+
     public function employes()
     {
         $departementModel = new Departements();
@@ -74,6 +80,8 @@ class Admin extends BaseController
             $model->insert($payload);
         }
 
+        $this->Solde->createSoldesParEmploye($id);
+        
         return redirect()->to(base_url('admin/employe'))->with('success', 'Employé enregistré.');
     }
 

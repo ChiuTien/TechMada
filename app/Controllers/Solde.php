@@ -7,7 +7,7 @@ use App\Models\TypeConge;
 
 class Solde extends BaseController {
 
-    private function __construct() {
+    public function __construct() {
         $this->Soldes = new Soldes();
         $this->TypeConge = new TypeConge();
     }
