@@ -17,6 +17,16 @@ class Home extends BaseController
         return view('Views/auth/login');
     }
 
+    public function employeRoute($employe) {
+        if ($employe['role'] == 'Employe') {
+            return redirect()->to(base_url('/employe/dashboard')); 
+        } else if ($employe['role'] == 'Administrateur') {
+            return redirect()->to(base_url('/admin/employe')); 
+        } else {
+            return redirect()->to(base_url('/rh/list')); 
+        }
+    }
+
     public function login()
     {
         $email = (string) $this->request->getPost('email');
@@ -27,9 +37,10 @@ class Home extends BaseController
                        ->first();
 
         if ($employe) {
-            return redirect()->to(base_url('')); 
-        } else {        
-            session()->setFlashdata('error', 'Identifiants invalides.');
+            return $this->employeRoute($employe);
+        } else {       
+            echo "dede"; 
+            // session()->setFlashdata('error', 'Identifiants invalides.');
         }
 
         // if ($email === 'admin@techmada.mg' && $password === 'admin123') {
