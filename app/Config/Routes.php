@@ -15,7 +15,7 @@ $routes->post('/employe/create/save', 'Employe::storeConge');
 $routes->get('/employe/index', 'Employe::getAllConge');
 
 //Rh
-$routes->get('/rh/index', 'Home::rh');
+$routes->get('/rh/index', 'Home::rh'); //Misy ovaina kely ito 
 $routes->get('/rh/list', 'RessourceH::getAllCongeAttente');
 $routes->post('/rh/traiterConge', 'RessourceH::traiterConge');
 

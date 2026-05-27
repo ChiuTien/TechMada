@@ -2,8 +2,16 @@
 
 namespace App\Controllers;
 
+use App\Models\Employes;
+
 class Home extends BaseController
 {
+    private $Employes;
+
+    public function __construct() {
+        $this->Employes = new Employes();
+    }
+
     public function index()
     {
         return view('Views/auth/login');
@@ -14,17 +22,23 @@ class Home extends BaseController
         $email = (string) $this->request->getPost('email');
         $password = (string) $this->request->getPost('password');
 
-        if ($email === 'admin@techmada.mg' && $password === 'admin123') {
-            return redirect()->to(base_url('admin/employe'));
-        } else if ($email === 'employe@techmada.mg' && $password === 'emp123') {
-            return redirect()->to(base_url('employe/dashboard'));
-        } else {
-            return redirect()->to(base_url('rh/index'));
+        $employe = $this->Employes->where('email', $email)
+                       ->where('password', $password)
+                       ->first();
+
+        if ($employe) {
+            return redirect()->to(base_url('')); 
+        } else {        
+            session()->setFlashdata('error', 'Identifiants invalides.');
         }
 
-        session()->setFlashdata('error', 'Identifiants invalides.');
-
-        return redirect()->to(base_url('/'));
+        // if ($email === 'admin@techmada.mg' && $password === 'admin123') {
+        //     return redirect()->to(base_url('admin/employe'));
+        // } else if ($email === 'employe@techmada.mg' && $password === 'emp123') {
+        //     return redirect()->to(base_url('employe/dashboard'));
+        // } else {
+        //     return redirect()->to(base_url('rh/index'));
+        // }
     }
 
     public function dashboard()
